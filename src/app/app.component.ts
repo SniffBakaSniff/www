@@ -4,13 +4,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from "./about/about.component";
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , NavbarComponent, RouterModule, MatToolbarModule],
+  imports: [RouterOutlet, NavbarComponent, RouterModule, MatToolbarModule, HomeComponent, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
