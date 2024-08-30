@@ -30,6 +30,38 @@ body, html {
 
 .container {
     padding: 25px;
-    margin: 0 auto;
+    margin: 2% auto;
+    max-width: 90%;
+    height: 80%;
+    border: #a0a0a0 1px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--navbar-text);
 }   
 
+.notice-small {
+    color: var(--navbar-text);
+    font-size: small;
+
+}
+
+.notice-medium {
+    color: var(--navbar-text);
+    font-size: medium;
+}
+
+.notice-large {
+    color: var(--navbar-text);
+    font-size: large;
+}
+
+.notice>a {
+    color: var(--navbar-text);
+    text-decoration: underline;
+    text-decoration-color: var(--navbar-text);
+    transition: 0.2s;
+}
+.notice>a:hover {
+    color: var(--link-hover);
+    text-decoration-color: var(--link-hover);
+    transition: 0.2s;
+}

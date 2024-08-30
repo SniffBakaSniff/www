@@ -1,5 +1,11 @@
+:root {
+    --navbar-background: #004f4f7c;
+    --navbar-text: #04d6d3;
+}
+
 .navbar {
     padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 .spacer {
@@ -13,4 +19,34 @@ mat-toolbar {
 
 mat-toolbar a {
     color: #04d6d3;
+}
+
+.nav-link {
+    padding: 20px;
+    margin: 0 10px;
+}
+.nav-link {
+    color: var(--navbar-background);
+    transition: 0.2s;
+
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.nav-item.active>.nav-link {
+    color: var(--front);
+    text-decoration-color: var(--front);
+
+    text-shadow:
+    -1px -1px 5px var(--back-low),
+    1px -1px 5px var(--back-low),
+    -1px 1px 5px var(--back-low),
+    1px 1px 5px var(--back-low);
+
+    padding: 20px;
+    transition: 0.2s;
+}
+
+li {
+    list-style-type: none;
 }
